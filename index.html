@@ -12,16 +12,19 @@
 
 <header>
   <nav>
-  <ul class="nav">
+    <div class="nav">
+  <ul class="topnav">
     <li><a href="#home" v-on:click="pageName = 'home'">Home</a></li>
     <li><a href="#calender" v-on:click="pageName = 'calender'">Calender</a></li>
     <li><a href="#practice" v-on:click="pageName = 'practice'">Practice</a></li>
     <li><a href="#lessons" v-on:click="pageName = 'lessons'">Lessons</a></li>
     <li><a href="#tools" v-on:click="pageName = 'tools'">Tools</a></li>
   </ul>
+  </div>
   </nav>
 </header>
 
+<div class="content">
 <!-- dashboard -->
 <main v-bind:hidden="pageName != 'home'">
 <div class="home">
@@ -29,11 +32,11 @@
   <img src="images/pianist.jpg" alt="piano player">
 
   <div class="remind">
-    <h3>Don't forget to practice today!</h3>
+    <h2>Don't forget to practice today!</h3>
     <p>Practiced 4/5 days</p>
   </div>
   <div class="leaderboard">
-    <h1>Leaderboard</h1>
+    <h2>Leaderboard</h1>
     <p>Max 500 hrs</p>
     <p>Hadley 456 hrs</p>
     <p>Gabby 427 hrs</p>
@@ -66,9 +69,38 @@
 </div>
 </main>
 
+<main v-bind:hidden="pageName != 'lessons'">
+<div class="lessons">
+
+<h2>Master a new scale</h2>
+<h2>Complete the trombone starter series</h2>
+<h2>Learn advanced techniques</h2>
+
+</div>
+</main>
+
+<main v-bind:hidden="pageName != 'tools'">
+<div class="tools">
+
+  <p>woah is a tuner</p>
+  <p><a href="#metronome" v-on:click="pageName = 'metronome'">metronome</a></p>
+
+</main>
+
+<main v-bind:hidden="pageName != 'metronome'">
+  <p>woah is a metronome</p>
+  <p><a href="#tools" v-on:click="pageName = 'tools'">tuner</a></p>
+</main>
+
+</div>
+
+
+
+
+
 <!-- Tips -->
-<main v-bind:hidden="pageName != 'tips'">
-<div class="tips">
+<!-- <main v-bind:hidden="pageName != 'tipsssss'">
+<div class="tipsssss">
   <h2>How to prepare for your audition</h2>
   <p>Whether you’ve been playing for one year or ten, we can all get some nerves when its audition time. While a little nervousness is healthy, you don’t want to be completely nervous! One of the best ways to help with nerves is to be prepared. Heres an example of how to set yourself up for success.
   </p>
@@ -97,7 +129,7 @@
 
 <p>Most importantly, make sure youre havig fun! Solo's are a great way to show off your hard work, and the more you put into them the better you'll sound! Good luck!</p>
 </div>
-</main>
+</main> -->
 
 
 
@@ -113,13 +145,15 @@
 
 
 
-
+</div>
 
 
 <footer>
-  <ul class="nav">
+  <div class="nav">
+  <ul class="bottomnav">
     <p>PracticePro</p>
   </ul>
+  </div>
 </footer>
     <script src="./dist/main.js" type="text/javascript"></script>
 
