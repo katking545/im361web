@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \"* {\\n  color: red;\\n}\\n\", \"\"]);\n\n\n\n//# sourceURL=webpack:///./src/style.css?./node_modules/css-loader/dist/cjs.js");
+eval("exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \"* {\\n  color: purple;\\n}\\n\\nh1 {font-family: cursive;\\n}\\n\\nli {\\n  color: blue;\\n  font-style: italic;\\n  font-size: 5em\\n}\\n\\np {\\n  color: green;\\n\\n}\\n\\nbutton {\\n\\n}\\n\\nhtml {\\n  width: 50%;\\n  margin: 0 auto;\\n  background-color: yellow;\\n}\\n\", \"\"]);\n\n\n\n//# sourceURL=webpack:///./src/style.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
