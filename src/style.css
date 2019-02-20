@@ -10,6 +10,7 @@ ul.nav {
 
 il.nav {
   display: inline;
+  float: left;
 }
 
 li a {
@@ -18,4 +19,9 @@ li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+}
+
+img{
+    width:100%;
+    max-width:600px;
 }
