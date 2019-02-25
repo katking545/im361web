@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  margin-top: 60px;
 }
 
 .content {
@@ -9,6 +10,8 @@ body {
 
 .nav {
 width: 100%;
+position: fixed;
+top: 0;
 }
 
 .nav ul {
@@ -31,6 +34,46 @@ width: 100%;
   padding: 14px 16px;
   text-decoration: none;
 }
+
+/* start page */
+.startpage {
+  overflow: hidden;
+}
+
+.startpage h1 {
+  color: #5BAE32;
+  text-align: center;
+  font-size: 3em;
+
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.startpage p {
+  text-align: center;
+}
+
+.startpage img {
+  padding: 10px;
+  max-width: 400px;
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
 
 img{
     width:100%;

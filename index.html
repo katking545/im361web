@@ -25,22 +25,57 @@
 </header>
 
 <div class="content">
+
+
+<!-- Start Page -->
+<main v-bind:hidden="pageName != 'start'" class="animated">
+  <div class="startpage">
+  <h1>PracticePro</h1>
+  <img src="images/icon.jpg" alt="practice pro icon" width="400px">
+  <h1>Welcome</h1>
+  <p><a href="#home" v-on:click="pageName = 'home'">Begin</a></p>
+  </div>
+</main>
+
+
+
+
 <!-- dashboard -->
 <main v-bind:hidden="pageName != 'home'">
 <div class="home">
 
+<h1>Dashboard</h1>
+
+<div class="img">
   <img src="images/pianist.jpg" alt="piano player">
+  <p><a href="#tips" v-on:click="pageName = 'tips'">How to prepare for your audition</a></p>
+</div>
 
   <div class="remind">
     <h2>Don't forget to practice today!</h3>
     <p>Practiced 4/5 days</p>
   </div>
-  <div class="leaderboard">
+
+<div class="leaderboard">
+  <a href="#leaderboard" v-on:click="pageName = 'leaderboard'">
+    <div>
+      <h2>Leaderboard</h1>
+      <p>Max 500 hrs</p>
+      <p>Hadley 456 hrs</p>
+      <p>Gabby 427 hrs</p>
+    </div>
+  </a>
+</div>
+
+  <!-- <div class="leaderboard">
     <h2>Leaderboard</h1>
     <p>Max 500 hrs</p>
     <p>Hadley 456 hrs</p>
     <p>Gabby 427 hrs</p>
-  </div>
+  </div> -->
+
+
+
   <div class="achievements">
     <p>5 Day Streak</p>
     <p>100/200 Hours</p>
@@ -63,7 +98,7 @@
 
 <main v-bind:hidden="pageName != 'practice'">
 <div class="pracitce">
-<p>damn i hope this works</p>
+<p>i hope this works</p>
 <h3>oof</h3>
 
 </div>
@@ -99,8 +134,8 @@
 
 
 <!-- Tips -->
-<!-- <main v-bind:hidden="pageName != 'tipsssss'">
-<div class="tipsssss">
+<main v-bind:hidden="pageName != 'tips'">
+<div class="tips">
   <h2>How to prepare for your audition</h2>
   <p>Whether you’ve been playing for one year or ten, we can all get some nerves when its audition time. While a little nervousness is healthy, you don’t want to be completely nervous! One of the best ways to help with nerves is to be prepared. Heres an example of how to set yourself up for success.
   </p>
@@ -129,7 +164,7 @@
 
 <p>Most importantly, make sure youre havig fun! Solo's are a great way to show off your hard work, and the more you put into them the better you'll sound! Good luck!</p>
 </div>
-</main> -->
+</main>
 
 
 
@@ -149,9 +184,9 @@
 
 
 <footer>
-  <div class="nav">
+  <div class="footer">
   <ul class="bottomnav">
-    <p>PracticePro</p>
+    <!-- <p>PracticePro</p> -->
   </ul>
   </div>
 </footer>
