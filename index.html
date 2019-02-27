@@ -33,6 +33,9 @@
   <h1>PracticePro</h1>
   <img src="images/icon.jpg" alt="practice pro icon" width="400px">
   <h1>Welcome</h1>
+  First name? <input type="text" id="firstName" value="-">
+  Last name? <input type="text" id="lastName" value="-">
+
   <p><a href="#home" v-on:click="pageName = 'home'">Begin</a></p>
   </div>
 </main>
@@ -44,6 +47,7 @@
 <main v-bind:hidden="pageName != 'home'">
 <div class="home">
 
+<p>welcome {{ fullName }}</p>
 <h1>Dashboard</h1>
 
 <div class="img">
