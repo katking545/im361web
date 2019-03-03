@@ -18,7 +18,12 @@
   },
   "homepage": "https://github.com/katking545/im361web#readme",
   "dependencies": {
-    "vue": "^2.6.3"
+    "v-cal-input": "^0.1.9",
+    "v-calendar": "^0.9.7",
+    "vue": "^2.6.3",
+    "vue-badger-accordion": "^1.1.2",
+    "vue-date-pick": "^1.1.0",
+    "vuetify": "^1.5.4"
   },
   "devDependencies": {
     "css-loader": "^2.1.0",

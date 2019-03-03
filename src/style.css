@@ -195,3 +195,21 @@ a:link {
   width: 50%;
   margin: 0 25%;
 }
+
+
+/* practice page */
+.practice{
+  margin: 0 auto;
+}
+
+#appRoot{
+	background-color: #ECF0F1;
+	min-height: 100vh;
+
+	.task-list{
+		padding-top: 95px;
+	}
+}
+.tasklistPane{
+
+}
