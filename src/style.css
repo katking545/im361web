@@ -1,12 +1,16 @@
+html {
+  background-color: #deefdd;
+}
+
 body {
-  margin: 0;
+  /* margin: 0; */
   margin-top: 60px;
 }
 
-.content {
+/* .content {
   margin: auto;
   width: 50%;
-}
+} */
 
 .nav {
 width: 100%;
@@ -31,7 +35,7 @@ top: 0;
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  margin: 14px 16px;
   text-decoration: none;
 }
 
@@ -66,7 +70,7 @@ top: 0;
 }
 
 .startpage img {
-  padding: 10px;
+  margin: 10px;
   max-width: 400px;
   display: block;
     margin-left: auto;
@@ -74,8 +78,120 @@ top: 0;
     width: 50%;
 }
 
+/* Home Page */
+.top {
+  float: left;
+  width: 100%;
+}
 
-img{
-    width:100%;
-    max-width:600px;
+/* profile css */
+.profile {
+  float: left;
+  width: 25%;
+  padding: 0 1%;
+  margin: 0 1%;
+  background-color: #f9fff9;
+}
+
+.avatar {
+  max-width: 30%;
+  float: left;
+  margin-top: 2%;
+  margin-right: 1%;
+}
+
+.name {
+  float: left;
+  width: 60%;
+}
+
+.stats {
+float: left;
+width: 50%;
+}
+
+.statslist {
+  list-style-type: none;
+
+}
+
+.statslist li {
+
+}
+
+.img img {
+  max-width: 100%;
+}
+
+.img {
+  float: left;
+  width: 40%;
+  margin: 0 1%;
+}
+
+.img p {
+  text-align: center;
+  margin-top: 0;
+  background-color: #f9fff9;
+}
+
+.img a {
+  text-decoration: none;
+}
+
+.leaderboard {
+  float: left;
+  width: 25%;
+  padding: 0 1%;
+  margin: 0 1%;
+  background-color: #f9fff9;
+  text-decoration: none;
+}
+
+.pictext {
+  width: 95%;
+  margin: 2%;
+}
+
+.pictext2 {
+  width: 95%;
+  margin: 2%;
+}
+
+.pictext3 {
+  width: 95%;
+  margin: 2%;
+}
+
+.leaderboard p {
+  width: 60%;
+  float: right;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.leaderboardlink {
+  text-decoration: none;
+}
+
+.remind {
+  float: left;
+  width: 50%;
+  margin: 0 25%;
+  background-color: #f9fff9;
+  color: #5BAE32;
+}
+
+.achievements {
+  float: left;
+  width: 50%;
+  margin: 0 25%;
+}
+
+.calender {
+  float: left;
+  width: 50%;
+  margin: 0 25%;
 }

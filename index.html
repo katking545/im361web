@@ -33,8 +33,8 @@
   <h1>PracticePro</h1>
   <img src="images/icon.jpg" alt="practice pro icon" width="400px">
   <h1>Welcome</h1>
-  First name? <input type="text" id="firstName" value="-">
-  Last name? <input type="text" id="lastName" value="-">
+  First name? <input v-model="firstName" placeholder="First name?">
+  Last name? <input v-model="lastName" placeholder="Last name?">
 
   <p><a href="#home" v-on:click="pageName = 'home'">Begin</a></p>
   </div>
@@ -47,48 +47,62 @@
 <main v-bind:hidden="pageName != 'home'">
 <div class="home">
 
-<p>welcome {{ fullName }}</p>
-<h1>Dashboard</h1>
+<div class="profile">
+  <img class="avatar" src="images/male.png" alt="profile picture">
+  <p class="name">{{ fullName }}</p>
+  <div class="stats">
+    <ul class="statslist">
+      <li>
+        <span>Hours</span>
+        <span>222</span>
+      </li>
+      <li>
+        <span>Lessons</span>
+        <span>8</span>
+      </li>
+      <li>
+        <span>Scales</span>
+        <span>13</span>
+      </li>
+    </ul>
+  </div>
+</div>
+
 
 <div class="img">
+  <a href="#tips" v-on:click="pageName = 'tips'">
   <img src="images/pianist.jpg" alt="piano player">
   <p><a href="#tips" v-on:click="pageName = 'tips'">How to prepare for your audition</a></p>
+  </a>
 </div>
+
+<div class="leaderboard">
+  <a href="leaderboardlink" v-on:click="pageName = 'leaderboard'">
+    <div>
+      <h2>Leaderboard</h1>
+        <div class="pictext">
+          <img class="profile" src="images/max.png" alt="profile picture">
+            <p>Max 500 hrs</p>
+        </div>
+        <div class="pictext2">
+          <img class="profile" src="images/hadley.png" alt="profile picture">
+          <p>Hadley 456 hrs</p>
+        </div>
+        <div class="pictext2">
+          <img class="profile" src="images/chloe.png" alt="profile picture">
+          <p>Chloe 427 hrs</p>
+        </div>
+
+    </div>
+  </a>
+</div>
+
 
   <div class="remind">
     <h2>Don't forget to practice today!</h3>
     <p>Practiced 4/5 days</p>
   </div>
 
-<div class="leaderboard">
-  <a href="#leaderboard" v-on:click="pageName = 'leaderboard'">
-    <div>
-      <h2>Leaderboard</h1>
-      <p>Max 500 hrs</p>
-      <p>Hadley 456 hrs</p>
-      <p>Gabby 427 hrs</p>
-    </div>
-  </a>
-</div>
-
-  <!-- <div class="leaderboard">
-    <h2>Leaderboard</h1>
-    <p>Max 500 hrs</p>
-    <p>Hadley 456 hrs</p>
-    <p>Gabby 427 hrs</p>
-  </div> -->
-
-
-
-  <div class="achievements">
-    <p>5 Day Streak</p>
-    <p>100/200 Hours</p>
-    <p>12/20</p>
-  </div>
-  <div class="calender">
-    <p>4 Days until audition</p>
-  </div>
-</div>
 </main>
 
 <!-- Calender -->
