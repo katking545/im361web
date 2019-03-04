@@ -2,7 +2,7 @@ import "./style.css";
 import Vue from 'vue/dist/vue.js'
 
 
-  
+
 
 var app = new Vue({
   el: '#app',
@@ -15,8 +15,8 @@ var app = new Vue({
 			completedTasks: 'Completed Steps'
 		},
 		tasks: [
-			{ description: "Solo: 15 min", completed: false },
 			{ description: "Scales: 30 min", completed: false },
+			{ description: "Solo: 30 min", completed: false },
 			{ description: "Etude 30 min", completed: false },
 		],
 		editTaskIndex: -1
