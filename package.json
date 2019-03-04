@@ -23,6 +23,7 @@
     "vue": "^2.6.3",
     "vue-badger-accordion": "^1.1.2",
     "vue-date-pick": "^1.1.0",
+    "vue-foldable": "^1.0.0-alpha.1",
     "vuetify": "^1.5.4"
   },
   "devDependencies": {
